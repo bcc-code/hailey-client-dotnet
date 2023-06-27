@@ -11,6 +11,6 @@ namespace BccCode.Hailey.Client
 
         public string ApiKey { get; set; }
 
-        public string ApiBasePath { get; set; } = "https://hhr-employee-view-openapi-demo.azurewebsites.net";
+        public string ApiBasePath { get; set; } = "https://api.haileyhr.app/";
     }
 }

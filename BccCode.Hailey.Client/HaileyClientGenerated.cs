@@ -77,7 +77,7 @@ namespace BccCode.Hailey.Client
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v12.0.0.0))")]
     public partial class HaileyClient : IHaileyClient
     {
-        private string _baseUrl = "https://hhr-employee-view-openapi-demo.azurewebsites.net";
+        private string _baseUrl = "https://api.haileyhr.app/";
         private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;
 
         public HaileyClient()

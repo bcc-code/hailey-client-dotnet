@@ -23,7 +23,6 @@ namespace BccCode.Hailey.Client.Tests
         public async Task Employee_GetById_ReturnsEmployeee()
         {
             // Assemble -- setup test rig
-            var employeeIdList = new List<Guid>();
             var resultlist = default(List<EmployeeListItem>);
             var result = default(Employee);
             var employeewithtimeoff = default(List<EmployeeWithTimeOffs>);
@@ -39,10 +38,6 @@ namespace BccCode.Hailey.Client.Tests
 
                 employeewithtimeoff = timeoff.Employees;
 
-                foreach (var employee in employeewithtimeoff)
-                {
-                    employeeIdList.Add(employee.EmployeeId);
-                }
             }
             catch (Exception ex)
             {
