@@ -1042,7 +1042,7 @@ namespace BccCode.Hailey.Client
         /// <summary>
         /// The unique id for the custom field in Hailey HR.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Guid Id { get; set; }
 
         /// <summary>
@@ -1154,7 +1154,7 @@ namespace BccCode.Hailey.Client
         /// Custom fields defined in a Company, with the data set for the Employee.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("customFieldsData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.Dictionary<string, JToken> CustomFieldsData { get; set; }
+        public System.Collections.Generic.Dictionary<string, object> CustomFieldsData { get; set; }
 
         public string ToJson()
         {
@@ -1435,7 +1435,7 @@ namespace BccCode.Hailey.Client
         /// Custom fields defined for a Company, with the data set for the Employee.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("customFieldsData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.Dictionary<string, JToken> CustomFieldsData { get; set; }
+        public System.Collections.Generic.Dictionary<string, object> CustomFieldsData { get; set; }
 
         public string ToJson()
         {
@@ -1694,7 +1694,7 @@ namespace BccCode.Hailey.Client
         /// Custom fields defined for a Company, with the data set for the Employment.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("customFieldsData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.Dictionary<string, JToken> CustomFieldsData { get; set; }
+        public System.Collections.Generic.Dictionary<string, object> CustomFieldsData { get; set; }
 
         public string ToJson()
         {
@@ -2260,7 +2260,7 @@ namespace BccCode.Hailey.Client
         [Newtonsoft.Json.JsonProperty("history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.List<SalaryHistoryDataPoint> History { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("pendingApproval", Required = Newtonsoft.Json.Required.AllowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("pendingApproval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SalaryPendingApproval PendingApproval { get; set; }
 
         public string ToJson()
