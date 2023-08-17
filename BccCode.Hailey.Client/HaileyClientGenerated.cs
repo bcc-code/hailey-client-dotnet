@@ -2260,7 +2260,7 @@ namespace BccCode.Hailey.Client
         [Newtonsoft.Json.JsonProperty("history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.List<SalaryHistoryDataPoint> History { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("pendingApproval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("pendingApproval", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SalaryPendingApproval PendingApproval { get; set; }
 
         public string ToJson()
