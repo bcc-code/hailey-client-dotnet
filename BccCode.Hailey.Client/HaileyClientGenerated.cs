@@ -1315,7 +1315,7 @@ namespace BccCode.Hailey.Client
         /// Number of vacation days for the Employee. Calculated from the employee's effectual employment.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("vacationDays", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VacationDays { get; set; }
+        public double? VacationDays { get; set; }
 
         /// <summary>
         /// Id of the Employee the current Employee is substituting for, if any. Calculated from the employee's effectual employment.
@@ -1640,7 +1640,7 @@ namespace BccCode.Hailey.Client
         /// Number of vacation days for the Employee.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("vacationDays", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? VacationDays { get; set; }
+        public double? VacationDays { get; set; }
 
         /// <summary>
         /// Id of the Employee the current Employee is substituting for, if any.
